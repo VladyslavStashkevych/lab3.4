@@ -13,7 +13,7 @@ int main() {
 
 	// Розгалуження в повній формі
 	if ((y <= 0 && x <= 0 && y >= -x - 2 * R) ||
-		(y >= 0 && x >= 0 && y >= sqrt(R * R - x * x) && y <= 2 * R && x <= 2 * R))
+		(y >= 0 && x >= 0 && y * y >= R * R - x * x && y <= 2 * R && x <= 2 * R))
 		 cout << "\nYES\n";
 	else cout << "\nNO\n";
 
